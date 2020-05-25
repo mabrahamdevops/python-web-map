@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8d01360a9fd146879822a7b20cf25f28 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8d01360a9fd146879822a7b20cf25f28" ></div>
+        
+</body>
+<script>    
+    
+            var map_8d01360a9fd146879822a7b20cf25f28 = L.map(
+                "map_8d01360a9fd146879822a7b20cf25f28",
+                {
+                    center: [35.9311, -84.31],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    zoomStarted: 8,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0ffccfb0d84c4ec89ceb4a47bb04fb19 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8d01360a9fd146879822a7b20cf25f28);
+        
+    
+            var circle_marker_2d28a44db11445acbe5da915af9f2797 = L.circleMarker(
+                [35.9311, -84.31],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_8d01360a9fd146879822a7b20cf25f28);
+        
+    
+        var popup_557bae2b136c42baab6e98f47dd6fd04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27e6015bf98b499992e0c8f42a7ec45a = $(`<div id="html_27e6015bf98b499992e0c8f42a7ec45a" style="width: 100.0%; height: 100.0%;">Zoom out to view Volcanoes: western US</div>`)[0];
+            popup_557bae2b136c42baab6e98f47dd6fd04.setContent(html_27e6015bf98b499992e0c8f42a7ec45a);
+        
+
+        circle_marker_2d28a44db11445acbe5da915af9f2797.bindPopup(popup_557bae2b136c42baab6e98f47dd6fd04)
+        ;
+
+        
+    
+    
+            var feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44 = L.featureGroup(
+                {}
+            ).addTo(map_8d01360a9fd146879822a7b20cf25f28);
+        
+    
+            var circle_marker_61f841d76fe9464c8d993b6f4d1ba439 = L.circleMarker(
+                [48.7767982, -121.810997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_c68d5ad952214a0faa38759bd6694628 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d299967c7984a04a79e16bc592fb29f = $(`<div id="html_4d299967c7984a04a79e16bc592fb29f" style="width: 100.0%; height: 100.0%;">Baker volcano    3285.0 meters</div>`)[0];
+            popup_c68d5ad952214a0faa38759bd6694628.setContent(html_4d299967c7984a04a79e16bc592fb29f);
+        
+
+        circle_marker_61f841d76fe9464c8d993b6f4d1ba439.bindPopup(popup_c68d5ad952214a0faa38759bd6694628)
+        ;
+
+        
+    
+    
+            var circle_marker_d4bcc1ee5fa5427fbc5da0209a682c7c = L.circleMarker(
+                [48.1118011, -121.1110001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_7c62efe2f3ac4fbc9b3df78be1baf748 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39d14a2f52b643ec917e045e4aefaa6c = $(`<div id="html_39d14a2f52b643ec917e045e4aefaa6c" style="width: 100.0%; height: 100.0%;">Glacier Peak volcano    3213.0 meters</div>`)[0];
+            popup_7c62efe2f3ac4fbc9b3df78be1baf748.setContent(html_39d14a2f52b643ec917e045e4aefaa6c);
+        
+
+        circle_marker_d4bcc1ee5fa5427fbc5da0209a682c7c.bindPopup(popup_7c62efe2f3ac4fbc9b3df78be1baf748)
+        ;
+
+        
+    
+    
+            var circle_marker_ad3e2a6f975945fe88ffe11469907001 = L.circleMarker(
+                [46.8698006, -121.7509995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_3bcb7cedd27a46e6bd114f309c6a70aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16adddd8e8414f89b07fee31a809a2dd = $(`<div id="html_16adddd8e8414f89b07fee31a809a2dd" style="width: 100.0%; height: 100.0%;">Rainier volcano    4392.0 meters</div>`)[0];
+            popup_3bcb7cedd27a46e6bd114f309c6a70aa.setContent(html_16adddd8e8414f89b07fee31a809a2dd);
+        
+
+        circle_marker_ad3e2a6f975945fe88ffe11469907001.bindPopup(popup_3bcb7cedd27a46e6bd114f309c6a70aa)
+        ;
+
+        
+    
+    
+            var circle_marker_98f45c8d1fed49f18ea7a4d0cea642f6 = L.circleMarker(
+                [46.1997986, -122.1809998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_b9bc9f215a394fb2b2c151e2fa80e645 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d569dbb2c38477c9f673eed307d46e1 = $(`<div id="html_8d569dbb2c38477c9f673eed307d46e1" style="width: 100.0%; height: 100.0%;">St. Helens volcano    2549.0 meters</div>`)[0];
+            popup_b9bc9f215a394fb2b2c151e2fa80e645.setContent(html_8d569dbb2c38477c9f673eed307d46e1);
+        
+
+        circle_marker_98f45c8d1fed49f18ea7a4d0cea642f6.bindPopup(popup_b9bc9f215a394fb2b2c151e2fa80e645)
+        ;
+
+        
+    
+    
+            var circle_marker_362d838054b242dbb97f74b7a0d3c675 = L.circleMarker(
+                [46.20579910000001, -121.4909973],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_c138946651734392be0558822d200ae5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e90bc29bde9487492ff1d956cb1794e = $(`<div id="html_1e90bc29bde9487492ff1d956cb1794e" style="width: 100.0%; height: 100.0%;">Adams volcano    3742.0 meters</div>`)[0];
+            popup_c138946651734392be0558822d200ae5.setContent(html_1e90bc29bde9487492ff1d956cb1794e);
+        
+
+        circle_marker_362d838054b242dbb97f74b7a0d3c675.bindPopup(popup_c138946651734392be0558822d200ae5)
+        ;
+
+        
+    
+    
+            var circle_marker_05de5305d8944a3fb78df4f85b7a4f8a = L.circleMarker(
+                [45.8797989, -122.0810013],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_677153f3e1a94d008bfa365ea969b3f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac87d6c11b3e465cbec85b3732577881 = $(`<div id="html_ac87d6c11b3e465cbec85b3732577881" style="width: 100.0%; height: 100.0%;">West Crater volcano    1329.0 meters</div>`)[0];
+            popup_677153f3e1a94d008bfa365ea969b3f2.setContent(html_ac87d6c11b3e465cbec85b3732577881);
+        
+
+        circle_marker_05de5305d8944a3fb78df4f85b7a4f8a.bindPopup(popup_677153f3e1a94d008bfa365ea969b3f2)
+        ;
+
+        
+    
+    
+            var circle_marker_adc0c488b8f442e9911338e221992886 = L.circleMarker(
+                [45.929798100000006, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_55ebcaa39dfb48308cf4995809b4cbbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a75fedb63de4412a1a84fe18c4d9530 = $(`<div id="html_8a75fedb63de4412a1a84fe18c4d9530" style="width: 100.0%; height: 100.0%;">Indian Heaven volcano    1806.0 meters</div>`)[0];
+            popup_55ebcaa39dfb48308cf4995809b4cbbf.setContent(html_8a75fedb63de4412a1a84fe18c4d9530);
+        
+
+        circle_marker_adc0c488b8f442e9911338e221992886.bindPopup(popup_55ebcaa39dfb48308cf4995809b4cbbf)
+        ;
+
+        
+    
+    
+            var circle_marker_01185f29269a4b8fb1c8ee9e5a327a8a = L.circleMarker(
+                [45.3737984, -121.6910019],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_9f20c1fc8d334bd9bdae485cfcebd667 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4eaad36f165b4073b21c768b775bd58b = $(`<div id="html_4eaad36f165b4073b21c768b775bd58b" style="width: 100.0%; height: 100.0%;">Hood volcano    3426.0 meters</div>`)[0];
+            popup_9f20c1fc8d334bd9bdae485cfcebd667.setContent(html_4eaad36f165b4073b21c768b775bd58b);
+        
+
+        circle_marker_01185f29269a4b8fb1c8ee9e5a327a8a.bindPopup(popup_9f20c1fc8d334bd9bdae485cfcebd667)
+        ;
+
+        
+    
+    
+            var circle_marker_40141042f2d04bdcbede6ee772d2268d = L.circleMarker(
+                [44.691799200000005, -121.8010025],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_76405890ebbf4164bc916ee5c8fd78d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fce57dcdd44d4ad9a694bc009dcd30e2 = $(`<div id="html_fce57dcdd44d4ad9a694bc009dcd30e2" style="width: 100.0%; height: 100.0%;">Jefferson volcano    3199.0 meters</div>`)[0];
+            popup_76405890ebbf4164bc916ee5c8fd78d1.setContent(html_fce57dcdd44d4ad9a694bc009dcd30e2);
+        
+
+        circle_marker_40141042f2d04bdcbede6ee772d2268d.bindPopup(popup_76405890ebbf4164bc916ee5c8fd78d1)
+        ;
+
+        
+    
+    
+            var circle_marker_0c72800bde0944d4a929869e19441efe = L.circleMarker(
+                [44.4197998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_3f11d026f72e4e5dae6ef4f4e58ce5ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bca09ab0bc1b4f0f9f71d3a271d3c395 = $(`<div id="html_bca09ab0bc1b4f0f9f71d3a271d3c395" style="width: 100.0%; height: 100.0%;">Blue Lake Crater volcano    1230.0 meters</div>`)[0];
+            popup_3f11d026f72e4e5dae6ef4f4e58ce5ef.setContent(html_bca09ab0bc1b4f0f9f71d3a271d3c395);
+        
+
+        circle_marker_0c72800bde0944d4a929869e19441efe.bindPopup(popup_3f11d026f72e4e5dae6ef4f4e58ce5ef)
+        ;
+
+        
+    
+    
+            var circle_marker_4e6e3998e97f4caca5719365b3fcce9f = L.circleMarker(
+                [44.3797989, -121.9309998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_419d889210454172b9045c24a7e0b826 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80cc203a0be14af99892a4ac86cc6f9c = $(`<div id="html_80cc203a0be14af99892a4ac86cc6f9c" style="width: 100.0%; height: 100.0%;">Sand Mountain Field volcano    1664.0 meters</div>`)[0];
+            popup_419d889210454172b9045c24a7e0b826.setContent(html_80cc203a0be14af99892a4ac86cc6f9c);
+        
+
+        circle_marker_4e6e3998e97f4caca5719365b3fcce9f.bindPopup(popup_419d889210454172b9045c24a7e0b826)
+        ;
+
+        
+    
+    
+            var circle_marker_a9936ebae7494bf5b6c72ddf558687d7 = L.circleMarker(
+                [44.331798600000006, -121.8310013],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_dfdcfbecbcfe464e9b4961521af8b6ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3a6fe9ee3fb4c8f9d17a8335908b623 = $(`<div id="html_a3a6fe9ee3fb4c8f9d17a8335908b623" style="width: 100.0%; height: 100.0%;">Washington volcano    2376.0 meters</div>`)[0];
+            popup_dfdcfbecbcfe464e9b4961521af8b6ae.setContent(html_a3a6fe9ee3fb4c8f9d17a8335908b623);
+        
+
+        circle_marker_a9936ebae7494bf5b6c72ddf558687d7.bindPopup(popup_dfdcfbecbcfe464e9b4961521af8b6ae)
+        ;
+
+        
+    
+    
+            var circle_marker_0571d7e4a84a4820b72cc87b4ac4ebf6 = L.circleMarker(
+                [44.2848015, -121.8410034],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_cc51f7918bf842a18c7cca587358169e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6d72731b3874e968136725fd5bbfc54 = $(`<div id="html_d6d72731b3874e968136725fd5bbfc54" style="width: 100.0%; height: 100.0%;">Belknap volcano    2095.0 meters</div>`)[0];
+            popup_cc51f7918bf842a18c7cca587358169e.setContent(html_d6d72731b3874e968136725fd5bbfc54);
+        
+
+        circle_marker_0571d7e4a84a4820b72cc87b4ac4ebf6.bindPopup(popup_cc51f7918bf842a18c7cca587358169e)
+        ;
+
+        
+    
+    
+            var circle_marker_36226e39e5bf43eb91477fb1d3f1346c = L.circleMarker(
+                [44.1697998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_29b91ea3c9104b9a9b48a2ed5cfcdb68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bae8d2dbafe84555b591e86c55f73cfd = $(`<div id="html_bae8d2dbafe84555b591e86c55f73cfd" style="width: 100.0%; height: 100.0%;">North Sister Field volcano    3074.0 meters</div>`)[0];
+            popup_29b91ea3c9104b9a9b48a2ed5cfcdb68.setContent(html_bae8d2dbafe84555b591e86c55f73cfd);
+        
+
+        circle_marker_36226e39e5bf43eb91477fb1d3f1346c.bindPopup(popup_29b91ea3c9104b9a9b48a2ed5cfcdb68)
+        ;
+
+        
+    
+    
+            var circle_marker_0a2eb60b9a1a408fa25977c4532e67b4 = L.circleMarker(
+                [44.099800099999996, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_31da8e962bd8416281eeb8ba7e6fe622 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1abcb81fad6642aeb51f83d866243863 = $(`<div id="html_1abcb81fad6642aeb51f83d866243863" style="width: 100.0%; height: 100.0%;">South Sister volcano    3157.0 meters</div>`)[0];
+            popup_31da8e962bd8416281eeb8ba7e6fe622.setContent(html_1abcb81fad6642aeb51f83d866243863);
+        
+
+        circle_marker_0a2eb60b9a1a408fa25977c4532e67b4.bindPopup(popup_31da8e962bd8416281eeb8ba7e6fe622)
+        ;
+
+        
+    
+    
+            var circle_marker_37d4cd1145c8494fad6e5df6341c55a0 = L.circleMarker(
+                [43.978801700000005, -121.6809998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_12ba1957a1e7478c9e6a02a44309dcc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08b10be3d8d846398fab96a536469327 = $(`<div id="html_08b10be3d8d846398fab96a536469327" style="width: 100.0%; height: 100.0%;">Bachelor volcano    2763.0 meters</div>`)[0];
+            popup_12ba1957a1e7478c9e6a02a44309dcc4.setContent(html_08b10be3d8d846398fab96a536469327);
+        
+
+        circle_marker_37d4cd1145c8494fad6e5df6341c55a0.bindPopup(popup_12ba1957a1e7478c9e6a02a44309dcc4)
+        ;
+
+        
+    
+    
+            var circle_marker_12b07f17a155480196ddbac39374c932 = L.circleMarker(
+                [43.7218018, -121.2210007],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_45a2da8c5c784ac98a6bd071b02fa875 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20c9a41ea843491085f135acb4fa0a0c = $(`<div id="html_20c9a41ea843491085f135acb4fa0a0c" style="width: 100.0%; height: 100.0%;">Newberry Volcano volcano    2434.0 meters</div>`)[0];
+            popup_45a2da8c5c784ac98a6bd071b02fa875.setContent(html_20c9a41ea843491085f135acb4fa0a0c);
+        
+
+        circle_marker_12b07f17a155480196ddbac39374c932.bindPopup(popup_45a2da8c5c784ac98a6bd071b02fa875)
+        ;
+
+        
+    
+    
+            var circle_marker_cb558babdf49407d8425847c63df4812 = L.circleMarker(
+                [43.569801299999995, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_6c30579a47ca4a8885bcad3360391d64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3818f895582345cbad4406297b7fb960 = $(`<div id="html_3818f895582345cbad4406297b7fb960" style="width: 100.0%; height: 100.0%;">Davis Lake volcano    2163.0 meters</div>`)[0];
+            popup_6c30579a47ca4a8885bcad3360391d64.setContent(html_3818f895582345cbad4406297b7fb960);
+        
+
+        circle_marker_cb558babdf49407d8425847c63df4812.bindPopup(popup_6c30579a47ca4a8885bcad3360391d64)
+        ;
+
+        
+    
+    
+            var circle_marker_6c9817c858214b4da3e5f7ce315c4798 = L.circleMarker(
+                [43.5119019, -120.8610001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_043faa301ddc45d48f7cb8259d54d8cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d5a1ccecd3f44c7ab2ef85f2fedc514 = $(`<div id="html_5d5a1ccecd3f44c7ab2ef85f2fedc514" style="width: 100.0%; height: 100.0%;">Devils Garden volcano    1698.0 meters</div>`)[0];
+            popup_043faa301ddc45d48f7cb8259d54d8cf.setContent(html_5d5a1ccecd3f44c7ab2ef85f2fedc514);
+        
+
+        circle_marker_6c9817c858214b4da3e5f7ce315c4798.bindPopup(popup_043faa301ddc45d48f7cb8259d54d8cf)
+        ;
+
+        
+    
+    
+            var circle_marker_b4010e9ae7db4e438297551e463fd101 = L.circleMarker(
+                [43.240798999999996, -122.10099790000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_c140d6ffc1684dcc95dbeb9f7a377189 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_661dee4de53c4982a47ca8d94625ecbc = $(`<div id="html_661dee4de53c4982a47ca8d94625ecbc" style="width: 100.0%; height: 100.0%;">Cinnamon Butte volcano    1956.0 meters</div>`)[0];
+            popup_c140d6ffc1684dcc95dbeb9f7a377189.setContent(html_661dee4de53c4982a47ca8d94625ecbc);
+        
+
+        circle_marker_b4010e9ae7db4e438297551e463fd101.bindPopup(popup_c140d6ffc1684dcc95dbeb9f7a377189)
+        ;
+
+        
+    
+    
+            var circle_marker_3cc8370674d94d5180c7590c77a9dfe7 = L.circleMarker(
+                [43.471900899999994, -120.7509995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_bfbbf9d6052f413d9bb44f1110ccd0c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85e5fbfa3d0e41178f7ce85ab3556ea4 = $(`<div id="html_85e5fbfa3d0e41178f7ce85ab3556ea4" style="width: 100.0%; height: 100.0%;">Squaw Ridge Lava Field volcano    1711.0 meters</div>`)[0];
+            popup_bfbbf9d6052f413d9bb44f1110ccd0c3.setContent(html_85e5fbfa3d0e41178f7ce85ab3556ea4);
+        
+
+        circle_marker_3cc8370674d94d5180c7590c77a9dfe7.bindPopup(popup_bfbbf9d6052f413d9bb44f1110ccd0c3)
+        ;
+
+        
+    
+    
+            var circle_marker_8950da2c35d6439482d581c5dbc7c6ac = L.circleMarker(
+                [43.3609009, -120.6610031],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_b29f3d0825ff4011a61833eefbac6c72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18ae9858a33f406899241386d1ab99df = $(`<div id="html_18ae9858a33f406899241386d1ab99df" style="width: 100.0%; height: 100.0%;">Four Craters Lava Field volcano    1501.0 meters</div>`)[0];
+            popup_b29f3d0825ff4011a61833eefbac6c72.setContent(html_18ae9858a33f406899241386d1ab99df);
+        
+
+        circle_marker_8950da2c35d6439482d581c5dbc7c6ac.bindPopup(popup_b29f3d0825ff4011a61833eefbac6c72)
+        ;
+
+        
+    
+    
+            var circle_marker_a587aeaf1bbb400e9c73167626ffd2b2 = L.circleMarker(
+                [42.9299011, -122.1210022],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_84630910669f48cbaf8a85e1e8eb4297 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86545c7e5d0e44a5ba2947a8d90f3e57 = $(`<div id="html_86545c7e5d0e44a5ba2947a8d90f3e57" style="width: 100.0%; height: 100.0%;">Crater Lake volcano    2487.0 meters</div>`)[0];
+            popup_84630910669f48cbaf8a85e1e8eb4297.setContent(html_86545c7e5d0e44a5ba2947a8d90f3e57);
+        
+
+        circle_marker_a587aeaf1bbb400e9c73167626ffd2b2.bindPopup(popup_84630910669f48cbaf8a85e1e8eb4297)
+        ;
+
+        
+    
+    
+            var circle_marker_b6146b2e5a374162ba16d27c31b53949 = L.circleMarker(
+                [44.4299011, -110.6709976],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_4e5e468e619446b280dfe32c942d21b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2770e9e64bf840d0b6e0c0529ad79e7c = $(`<div id="html_2770e9e64bf840d0b6e0c0529ad79e7c" style="width: 100.0%; height: 100.0%;">Yellowstone volcano    2805.0 meters</div>`)[0];
+            popup_4e5e468e619446b280dfe32c942d21b1.setContent(html_2770e9e64bf840d0b6e0c0529ad79e7c);
+        
+
+        circle_marker_b6146b2e5a374162ba16d27c31b53949.bindPopup(popup_4e5e468e619446b280dfe32c942d21b1)
+        ;
+
+        
+    
+    
+            var circle_marker_a717c853122d46b583d9c28d13ae3175 = L.circleMarker(
+                [43.0998993, -118.7509995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_a9fd50c304c54109ab07663ac0509219 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fad1b8850eb4fbd85cf75d77e159ff5 = $(`<div id="html_7fad1b8850eb4fbd85cf75d77e159ff5" style="width: 100.0%; height: 100.0%;">Diamond Craters volcano    1435.0 meters</div>`)[0];
+            popup_a9fd50c304c54109ab07663ac0509219.setContent(html_7fad1b8850eb4fbd85cf75d77e159ff5);
+        
+
+        circle_marker_a717c853122d46b583d9c28d13ae3175.bindPopup(popup_a9fd50c304c54109ab07663ac0509219)
+        ;
+
+        
+    
+    
+            var circle_marker_2bd00d4ba7d54f6dbac3e519ec62d20a = L.circleMarker(
+                [43.1498985, -117.4710007],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_8ba22a1060d9479d97c276edf92c31c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_464bebbe7bd14042a83fdbe5cf5a8a7e = $(`<div id="html_464bebbe7bd14042a83fdbe5cf5a8a7e" style="width: 100.0%; height: 100.0%;">Jordan Craters volcano    1473.0 meters</div>`)[0];
+            popup_8ba22a1060d9479d97c276edf92c31c1.setContent(html_464bebbe7bd14042a83fdbe5cf5a8a7e);
+        
+
+        circle_marker_2bd00d4ba7d54f6dbac3e519ec62d20a.bindPopup(popup_8ba22a1060d9479d97c276edf92c31c1)
+        ;
+
+        
+    
+    
+            var circle_marker_98ba8fe2beb9430f836ffcf1c60280a7 = L.circleMarker(
+                [42.9999008, -117.8010025],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_7e6d1e9e3820432d98ed66015e1db90e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d31d19988d0745e08e22da26b6227424 = $(`<div id="html_d31d19988d0745e08e22da26b6227424" style="width: 100.0%; height: 100.0%;">Saddle Butte volcano    1700.0 meters</div>`)[0];
+            popup_7e6d1e9e3820432d98ed66015e1db90e.setContent(html_d31d19988d0745e08e22da26b6227424);
+        
+
+        circle_marker_98ba8fe2beb9430f836ffcf1c60280a7.bindPopup(popup_7e6d1e9e3820432d98ed66015e1db90e)
+        ;
+
+        
+    
+    
+            var circle_marker_90c801667c31436e9d1cad0c4b9f5025 = L.circleMarker(
+                [43.419899, -113.5009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_2a4e593f18304b9e9733dddc61e5b7cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d80425627449416581059e1d23a4e693 = $(`<div id="html_d80425627449416581059e1d23a4e693" style="width: 100.0%; height: 100.0%;">Craters of the Moon volcano    2005.0 meters</div>`)[0];
+            popup_2a4e593f18304b9e9733dddc61e5b7cf.setContent(html_d80425627449416581059e1d23a4e693);
+        
+
+        circle_marker_90c801667c31436e9d1cad0c4b9f5025.bindPopup(popup_2a4e593f18304b9e9733dddc61e5b7cf)
+        ;
+
+        
+    
+    
+            var circle_marker_cc3bc48952ab440fa9c8c12f6f9884bd = L.circleMarker(
+                [43.4999008, -112.45099640000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_f2d205c77b1b430f81f6f9207d91c889 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4aac1f8cf9ba41979409a32c1463823f = $(`<div id="html_4aac1f8cf9ba41979409a32c1463823f" style="width: 100.0%; height: 100.0%;">Hell Half Acre volcano    1631.0 meters</div>`)[0];
+            popup_f2d205c77b1b430f81f6f9207d91c889.setContent(html_4aac1f8cf9ba41979409a32c1463823f);
+        
+
+        circle_marker_cc3bc48952ab440fa9c8c12f6f9884bd.bindPopup(popup_f2d205c77b1b430f81f6f9207d91c889)
+        ;
+
+        
+    
+    
+            var circle_marker_fc18174a4fdc4a168b466c3d3b9e335a = L.circleMarker(
+                [43.1799011, -114.35099790000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_109f67b3c3aa47719daf6c0b191521bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_334095fae2cf4f4f8da7876b93af3d9f = $(`<div id="html_334095fae2cf4f4f8da7876b93af3d9f" style="width: 100.0%; height: 100.0%;">Shoshone Lava Field volcano    1478.0 meters</div>`)[0];
+            popup_109f67b3c3aa47719daf6c0b191521bd.setContent(html_334095fae2cf4f4f8da7876b93af3d9f);
+        
+
+        circle_marker_fc18174a4fdc4a168b466c3d3b9e335a.bindPopup(popup_109f67b3c3aa47719daf6c0b191521bd)
+        ;
+
+        
+    
+    
+            var circle_marker_c5f2c31ace244896842f24e5520e821d = L.circleMarker(
+                [42.605899799999996, -117.5810013],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_5e25042c43194f06a95ce4ffd50c7c6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6315ef5775dc4549b8bd5044b6446f70 = $(`<div id="html_6315ef5775dc4549b8bd5044b6446f70" style="width: 100.0%; height: 100.0%;">Jackies Butte volcano    1418.0 meters</div>`)[0];
+            popup_5e25042c43194f06a95ce4ffd50c7c6f.setContent(html_6315ef5775dc4549b8bd5044b6446f70);
+        
+
+        circle_marker_c5f2c31ace244896842f24e5520e821d.bindPopup(popup_5e25042c43194f06a95ce4ffd50c7c6f)
+        ;
+
+        
+    
+    
+            var circle_marker_5c5e411b26244b45b196630cac26ef67 = L.circleMarker(
+                [41.579898799999995, -121.5709991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_a414d048fdcb4da091800a9eb0d5b316 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adc2380b067242f69c2133f77e1e7009 = $(`<div id="html_adc2380b067242f69c2133f77e1e7009" style="width: 100.0%; height: 100.0%;">Medicine Lake volcano    2412.0 meters</div>`)[0];
+            popup_a414d048fdcb4da091800a9eb0d5b316.setContent(html_adc2380b067242f69c2133f77e1e7009);
+        
+
+        circle_marker_5c5e411b26244b45b196630cac26ef67.bindPopup(popup_a414d048fdcb4da091800a9eb0d5b316)
+        ;
+
+        
+    
+    
+            var circle_marker_dc7fbd795c3b4c91bd1cf700db91554f = L.circleMarker(
+                [42.8799019, -113.2210007],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_3d86518c1ecb424db376b76b71f5fbef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98f037d262d143a5afece27d29e60e6c = $(`<div id="html_98f037d262d143a5afece27d29e60e6c" style="width: 100.0%; height: 100.0%;">Wapi Lava Field volcano    1604.0 meters</div>`)[0];
+            popup_3d86518c1ecb424db376b76b71f5fbef.setContent(html_98f037d262d143a5afece27d29e60e6c);
+        
+
+        circle_marker_dc7fbd795c3b4c91bd1cf700db91554f.bindPopup(popup_3d86518c1ecb424db376b76b71f5fbef)
+        ;
+
+        
+    
+    
+            var circle_marker_9a08aa4b2bf24897b220d47cd482b25a = L.circleMarker(
+                [41.419899, -122.20099640000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_b1af6455c62a4d1d93dc3359bd75689c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b697c798cbec4d13b871ac042823e646 = $(`<div id="html_b697c798cbec4d13b871ac042823e646" style="width: 100.0%; height: 100.0%;">Shasta volcano    4317.0 meters</div>`)[0];
+            popup_b1af6455c62a4d1d93dc3359bd75689c.setContent(html_b697c798cbec4d13b871ac042823e646);
+        
+
+        circle_marker_9a08aa4b2bf24897b220d47cd482b25a.bindPopup(popup_b1af6455c62a4d1d93dc3359bd75689c)
+        ;
+
+        
+    
+    
+            var circle_marker_27bf7cf4512a41f99774648def0340dc = L.circleMarker(
+                [41.1778984, -121.4410019],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_e404182d12184dd281974d7d78902ad0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b151d796575d46868b24ca39a12be2cb = $(`<div id="html_b151d796575d46868b24ca39a12be2cb" style="width: 100.0%; height: 100.0%;">Brushy Butte volcano    1174.0 meters</div>`)[0];
+            popup_e404182d12184dd281974d7d78902ad0.setContent(html_b151d796575d46868b24ca39a12be2cb);
+        
+
+        circle_marker_27bf7cf4512a41f99774648def0340dc.bindPopup(popup_e404182d12184dd281974d7d78902ad0)
+        ;
+
+        
+    
+    
+            var circle_marker_e3e893be55314029ab11b21e4f5afdd9 = L.circleMarker(
+                [40.954898799999995, -121.3610001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_5847827304ad4c2090351b186ae307d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e805dfa3aec46e7a0c62d38c00e1b05 = $(`<div id="html_6e805dfa3aec46e7a0c62d38c00e1b05" style="width: 100.0%; height: 100.0%;">Big Cave volcano    1259.0 meters</div>`)[0];
+            popup_5847827304ad4c2090351b186ae307d1.setContent(html_6e805dfa3aec46e7a0c62d38c00e1b05);
+        
+
+        circle_marker_e3e893be55314029ab11b21e4f5afdd9.bindPopup(popup_5847827304ad4c2090351b186ae307d1)
+        ;
+
+        
+    
+    
+            var circle_marker_cf2a34a3be6f450abdcc709d23ed05c4 = L.circleMarker(
+                [40.77989960000001, -121.60099790000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_6b0a119cbf1b479087b162440165e85e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6145a46f7f894634b862ce4128ceb71b = $(`<div id="html_6145a46f7f894634b862ce4128ceb71b" style="width: 100.0%; height: 100.0%;">Twin Buttes volcano    1631.0 meters</div>`)[0];
+            popup_6b0a119cbf1b479087b162440165e85e.setContent(html_6145a46f7f894634b862ce4128ceb71b);
+        
+
+        circle_marker_cf2a34a3be6f450abdcc709d23ed05c4.bindPopup(popup_6b0a119cbf1b479087b162440165e85e)
+        ;
+
+        
+    
+    
+            var circle_marker_2a35961f95f64ac1b20c67b07b09e1f9 = L.circleMarker(
+                [40.6799011, -121.5510025],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_2f7c00ab39f845a3a6ec2ccce7ea2f5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e5757b07420411887c2e23acc6af6bc = $(`<div id="html_3e5757b07420411887c2e23acc6af6bc" style="width: 100.0%; height: 100.0%;">Tumble Buttes volcano    2191.0 meters</div>`)[0];
+            popup_2f7c00ab39f845a3a6ec2ccce7ea2f5d.setContent(html_3e5757b07420411887c2e23acc6af6bc);
+        
+
+        circle_marker_2a35961f95f64ac1b20c67b07b09e1f9.bindPopup(popup_2f7c00ab39f845a3a6ec2ccce7ea2f5d)
+        ;
+
+        
+    
+    
+            var circle_marker_c55f8cdcd1cc432e8a90b9398a4d5a4b = L.circleMarker(
+                [40.6299019, -120.8310013],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_de148a2ffc074da4b5092cf11bc9e1f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcd3e306d53f47efb7e496bc8ec2e484 = $(`<div id="html_bcd3e306d53f47efb7e496bc8ec2e484" style="width: 100.0%; height: 100.0%;">Eagle Lake Field volcano    1652.0 meters</div>`)[0];
+            popup_de148a2ffc074da4b5092cf11bc9e1f7.setContent(html_bcd3e306d53f47efb7e496bc8ec2e484);
+        
+
+        circle_marker_c55f8cdcd1cc432e8a90b9398a4d5a4b.bindPopup(popup_de148a2ffc074da4b5092cf11bc9e1f7)
+        ;
+
+        
+    
+    
+            var circle_marker_7ae0082557404f198a59e55692aab185 = L.circleMarker(
+                [40.491901399999996, -121.5009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_11e86bc43c7f4c20b070bc4879c25449 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03870a25ad4e4c4f9fc45b70c33f1a44 = $(`<div id="html_03870a25ad4e4c4f9fc45b70c33f1a44" style="width: 100.0%; height: 100.0%;">Lassen Volc Center volcano    3187.0 meters</div>`)[0];
+            popup_11e86bc43c7f4c20b070bc4879c25449.setContent(html_03870a25ad4e4c4f9fc45b70c33f1a44);
+        
+
+        circle_marker_7ae0082557404f198a59e55692aab185.bindPopup(popup_11e86bc43c7f4c20b070bc4879c25449)
+        ;
+
+        
+    
+    
+            var circle_marker_d80010f837524a279a21d5921ac2b006 = L.circleMarker(
+                [38.9698982, -122.7710037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_90658709cace46fdb5b8ff3e1469aa39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2a9a42c4e7342d1b9ad44b36262a2c2 = $(`<div id="html_a2a9a42c4e7342d1b9ad44b36262a2c2" style="width: 100.0%; height: 100.0%;">Clear Lake volcano    1439.0 meters</div>`)[0];
+            popup_90658709cace46fdb5b8ff3e1469aa39.setContent(html_a2a9a42c4e7342d1b9ad44b36262a2c2);
+        
+
+        circle_marker_d80010f837524a279a21d5921ac2b006.bindPopup(popup_90658709cace46fdb5b8ff3e1469aa39)
+        ;
+
+        
+    
+    
+            var circle_marker_e2e9f6879ff14e0da59451e7d5cbbc4e = L.circleMarker(
+                [39.3749008, -119.7210007],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_b18b6c27476145bc8c104a10203877fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_291705ab90d04f02bb0428680954a7ce = $(`<div id="html_291705ab90d04f02bb0428680954a7ce" style="width: 100.0%; height: 100.0%;">Steamboat Springs volcano    1415.0 meters</div>`)[0];
+            popup_b18b6c27476145bc8c104a10203877fb.setContent(html_291705ab90d04f02bb0428680954a7ce);
+        
+
+        circle_marker_e2e9f6879ff14e0da59451e7d5cbbc4e.bindPopup(popup_b18b6c27476145bc8c104a10203877fb)
+        ;
+
+        
+    
+    
+            var circle_marker_8597dde7d86546feb3622c78befa0691 = L.circleMarker(
+                [39.6500015, -107.03099820000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_817f1e94bfea48d8ae183273ed3558af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e719697cd7334acc94a7c38c1f2243a9 = $(`<div id="html_e719697cd7334acc94a7c38c1f2243a9" style="width: 100.0%; height: 100.0%;">Dotsero volcano    2230.0 meters</div>`)[0];
+            popup_817f1e94bfea48d8ae183273ed3558af.setContent(html_e719697cd7334acc94a7c38c1f2243a9);
+        
+
+        circle_marker_8597dde7d86546feb3622c78befa0691.bindPopup(popup_817f1e94bfea48d8ae183273ed3558af)
+        ;
+
+        
+    
+    
+            var circle_marker_037bd2de72e94062a4cfad99acf5f098 = L.circleMarker(
+                [37.9999008, -119.03099820000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_76ecad0f191645b4b1dbfe2a334c82c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78baadcd9dd54187bf043b0507b9d966 = $(`<div id="html_78baadcd9dd54187bf043b0507b9d966" style="width: 100.0%; height: 100.0%;">Mono Lake Volc Field volcano    2121.0 meters</div>`)[0];
+            popup_76ecad0f191645b4b1dbfe2a334c82c7.setContent(html_78baadcd9dd54187bf043b0507b9d966);
+        
+
+        circle_marker_037bd2de72e94062a4cfad99acf5f098.bindPopup(popup_76ecad0f191645b4b1dbfe2a334c82c7)
+        ;
+
+        
+    
+    
+            var circle_marker_64c4241382df439d939ebc09e5a6dca1 = L.circleMarker(
+                [38.970001200000006, -112.5009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_b57903dcbad84171b46a70ab6a17723d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78e9d56bc37845389c853f89073d610d = $(`<div id="html_78e9d56bc37845389c853f89073d610d" style="width: 100.0%; height: 100.0%;">Black Rock Desert volcano    1800.0 meters</div>`)[0];
+            popup_b57903dcbad84171b46a70ab6a17723d.setContent(html_78e9d56bc37845389c853f89073d610d);
+        
+
+        circle_marker_64c4241382df439d939ebc09e5a6dca1.bindPopup(popup_b57903dcbad84171b46a70ab6a17723d)
+        ;
+
+        
+    
+    
+            var circle_marker_750f5636c7c64d0e8bcb4aad4bee8ef6 = L.circleMarker(
+                [37.8799019, -119.0009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_073347aeffaf40a39d3e75c625746216 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42a222acedc64b3aa128887913241db6 = $(`<div id="html_42a222acedc64b3aa128887913241db6" style="width: 100.0%; height: 100.0%;">Mono Craters volcano    2796.0 meters</div>`)[0];
+            popup_073347aeffaf40a39d3e75c625746216.setContent(html_42a222acedc64b3aa128887913241db6);
+        
+
+        circle_marker_750f5636c7c64d0e8bcb4aad4bee8ef6.bindPopup(popup_073347aeffaf40a39d3e75c625746216)
+        ;
+
+        
+    
+    
+            var circle_marker_713cb954157946f9ab74ae3d0d80857a = L.circleMarker(
+                [37.6918983, -119.0210037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_bea0d99b23524ee9ae7283e1c9e84acf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7144594c602452e8a08a87f955e0696 = $(`<div id="html_d7144594c602452e8a08a87f955e0696" style="width: 100.0%; height: 100.0%;">Inyo Craters volcano    2629.0 meters</div>`)[0];
+            popup_bea0d99b23524ee9ae7283e1c9e84acf.setContent(html_d7144594c602452e8a08a87f955e0696);
+        
+
+        circle_marker_713cb954157946f9ab74ae3d0d80857a.bindPopup(popup_bea0d99b23524ee9ae7283e1c9e84acf)
+        ;
+
+        
+    
+    
+            var circle_marker_7c70ccc5f7a746d5bea7b1143461e53f = L.circleMarker(
+                [37.6999016, -118.8710022],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_f9a5119f2a0144fa8f2ad723590d08fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81e0d77922c04f23ab386000d536d05a = $(`<div id="html_81e0d77922c04f23ab386000d536d05a" style="width: 100.0%; height: 100.0%;">Long Valley volcano    3390.0 meters</div>`)[0];
+            popup_f9a5119f2a0144fa8f2ad723590d08fe.setContent(html_81e0d77922c04f23ab386000d536d05a);
+        
+
+        circle_marker_7c70ccc5f7a746d5bea7b1143461e53f.bindPopup(popup_f9a5119f2a0144fa8f2ad723590d08fe)
+        ;
+
+        
+    
+    
+            var circle_marker_a8a90ff62c6d44409c100b4489fa3c4c = L.circleMarker(
+                [37.579898799999995, -119.0510025],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_d5f6709136074559a5e3fb59856b85e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60c42f443798466ea533c765a0db9788 = $(`<div id="html_60c42f443798466ea533c765a0db9788" style="width: 100.0%; height: 100.0%;">Red Cones volcano    2748.0 meters</div>`)[0];
+            popup_d5f6709136074559a5e3fb59856b85e3.setContent(html_60c42f443798466ea533c765a0db9788);
+        
+
+        circle_marker_a8a90ff62c6d44409c100b4489fa3c4c.bindPopup(popup_d5f6709136074559a5e3fb59856b85e3)
+        ;
+
+        
+    
+    
+            var circle_marker_a003f7c3e39444ef9cc470a3efd4a5ee = L.circleMarker(
+                [37.0199013, -117.45099640000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_f03c5518a4d44e6e8b3004ad19651222 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee8fdd1bed6e44d8975372d6485ecaee = $(`<div id="html_ee8fdd1bed6e44d8975372d6485ecaee" style="width: 100.0%; height: 100.0%;">Ubehebe Craters volcano    752.0 meters</div>`)[0];
+            popup_f03c5518a4d44e6e8b3004ad19651222.setContent(html_ee8fdd1bed6e44d8975372d6485ecaee);
+        
+
+        circle_marker_a003f7c3e39444ef9cc470a3efd4a5ee.bindPopup(popup_f03c5518a4d44e6e8b3004ad19651222)
+        ;
+
+        
+    
+    
+            var circle_marker_38b1dc9743b042a990b0f03b27f8103e = L.circleMarker(
+                [37.5800018, -112.6709976],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_22a4f513bdc346e88bcdf843682705b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6803eaba67c14154a556836d812a1d79 = $(`<div id="html_6803eaba67c14154a556836d812a1d79" style="width: 100.0%; height: 100.0%;">Markagunt Plateau volcano    2840.0 meters</div>`)[0];
+            popup_22a4f513bdc346e88bcdf843682705b9.setContent(html_6803eaba67c14154a556836d812a1d79);
+        
+
+        circle_marker_38b1dc9743b042a990b0f03b27f8103e.bindPopup(popup_22a4f513bdc346e88bcdf843682705b9)
+        ;
+
+        
+    
+    
+            var circle_marker_ed0a6358652d49a8a277d181428276be = L.circleMarker(
+                [37.257, -113.6210022],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_c7f0548d9b3a400991875d894c46b07f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f6e3d08d0a34563883170ebb65e3a0a = $(`<div id="html_7f6e3d08d0a34563883170ebb65e3a0a" style="width: 100.0%; height: 100.0%;">Santa Clara volcano    1465.0 meters</div>`)[0];
+            popup_c7f0548d9b3a400991875d894c46b07f.setContent(html_7f6e3d08d0a34563883170ebb65e3a0a);
+        
+
+        circle_marker_ed0a6358652d49a8a277d181428276be.bindPopup(popup_c7f0548d9b3a400991875d894c46b07f)
+        ;
+
+        
+    
+    
+            var circle_marker_1bd42fd319b342c6a6404471cdd8aed2 = L.circleMarker(
+                [37.32799910000001, -112.40100100000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_b8d1530401e14fb29281fbd7649faaef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c59544927b0948dbb16300d50bfac890 = $(`<div id="html_c59544927b0948dbb16300d50bfac890" style="width: 100.0%; height: 100.0%;">Bald Knoll volcano    2135.0 meters</div>`)[0];
+            popup_b8d1530401e14fb29281fbd7649faaef.setContent(html_c59544927b0948dbb16300d50bfac890);
+        
+
+        circle_marker_1bd42fd319b342c6a6404471cdd8aed2.bindPopup(popup_b8d1530401e14fb29281fbd7649faaef)
+        ;
+
+        
+    
+    
+            var circle_marker_a9ac346c0f1d446cb54fe439967cef29 = L.circleMarker(
+                [36.3578987, -118.3209991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_9fe935c536b14c52a9a2345dd7669092 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04d15d335e1149799e5635f058141f0c = $(`<div id="html_04d15d335e1149799e5635f058141f0c" style="width: 100.0%; height: 100.0%;">Golden Trout Creek volcano    2886.0 meters</div>`)[0];
+            popup_9fe935c536b14c52a9a2345dd7669092.setContent(html_04d15d335e1149799e5635f058141f0c);
+        
+
+        circle_marker_a9ac346c0f1d446cb54fe439967cef29.bindPopup(popup_9fe935c536b14c52a9a2345dd7669092)
+        ;
+
+        
+    
+    
+            var circle_marker_f3edd3e50fcd4733a1acea459797108c = L.circleMarker(
+                [36.02989960000001, -117.8209991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_27241d5581ed49d3aae15630ec69e8f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a0cf0ce58534c8cbcb09ef4438b9807 = $(`<div id="html_2a0cf0ce58534c8cbcb09ef4438b9807" style="width: 100.0%; height: 100.0%;">Coso Volc Field volcano    2400.0 meters</div>`)[0];
+            popup_27241d5581ed49d3aae15630ec69e8f6.setContent(html_2a0cf0ce58534c8cbcb09ef4438b9807);
+        
+
+        circle_marker_f3edd3e50fcd4733a1acea459797108c.bindPopup(popup_27241d5581ed49d3aae15630ec69e8f6)
+        ;
+
+        
+    
+    
+            var circle_marker_9e5373b659ce452382b83bb8bae891f9 = L.circleMarker(
+                [36.3800011, -113.1309967],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_890efc855afe4c5ea773275400e41a51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e81fcf5d20f4e20821b7a0db98a2619 = $(`<div id="html_8e81fcf5d20f4e20821b7a0db98a2619" style="width: 100.0%; height: 100.0%;">Uinkaret Field volcano    1555.0 meters</div>`)[0];
+            popup_890efc855afe4c5ea773275400e41a51.setContent(html_8e81fcf5d20f4e20821b7a0db98a2619);
+        
+
+        circle_marker_9e5373b659ce452382b83bb8bae891f9.bindPopup(popup_890efc855afe4c5ea773275400e41a51)
+        ;
+
+        
+    
+    
+            var circle_marker_834a5ec18b8e4807b0bf019591986cc0 = L.circleMarker(
+                [34.75, -116.6210022],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_4fbcd18ba8774a93a358c2ca27eb6dac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c10e05fcda8420ea9e07e578c5900a7 = $(`<div id="html_7c10e05fcda8420ea9e07e578c5900a7" style="width: 100.0%; height: 100.0%;">Lavic Lake volcano    1495.0 meters</div>`)[0];
+            popup_4fbcd18ba8774a93a358c2ca27eb6dac.setContent(html_7c10e05fcda8420ea9e07e578c5900a7);
+        
+
+        circle_marker_834a5ec18b8e4807b0bf019591986cc0.bindPopup(popup_4fbcd18ba8774a93a358c2ca27eb6dac)
+        ;
+
+        
+    
+    
+            var circle_marker_1dd82be26c93458694fa718e6e98253a = L.circleMarker(
+                [35.8699989, -106.5709991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_ae59d91f4b7143c0aafad80b315480ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c61a83fc320453c96d9f1cd1cf0ed78 = $(`<div id="html_8c61a83fc320453c96d9f1cd1cf0ed78" style="width: 100.0%; height: 100.0%;">Valles Caldera volcano    3430.0 meters</div>`)[0];
+            popup_ae59d91f4b7143c0aafad80b315480ad.setContent(html_8c61a83fc320453c96d9f1cd1cf0ed78);
+        
+
+        circle_marker_1dd82be26c93458694fa718e6e98253a.bindPopup(popup_ae59d91f4b7143c0aafad80b315480ad)
+        ;
+
+        
+    
+    
+            var circle_marker_75f77a65bf1447ccbffc627e62fc5c5e = L.circleMarker(
+                [35.3699989, -111.5009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_ace75b14322e41d483162438f52e68c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f00f2235e428446baeacbac90b0138d0 = $(`<div id="html_f00f2235e428446baeacbac90b0138d0" style="width: 100.0%; height: 100.0%;">Sunset Crater volcano    2447.0 meters</div>`)[0];
+            popup_ace75b14322e41d483162438f52e68c3.setContent(html_f00f2235e428446baeacbac90b0138d0);
+        
+
+        circle_marker_75f77a65bf1447ccbffc627e62fc5c5e.bindPopup(popup_ace75b14322e41d483162438f52e68c3)
+        ;
+
+        
+    
+    
+            var circle_marker_d98fa959e48c4a79810750ed813750f3 = L.circleMarker(
+                [34.5499992, -115.78099820000001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_1fa3f4160b9446ff9c7008f1e0ca9819 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cb83cd54faf485399abdd2d05da4a8d = $(`<div id="html_2cb83cd54faf485399abdd2d05da4a8d" style="width: 100.0%; height: 100.0%;">Amboy volcano    288.0 meters</div>`)[0];
+            popup_1fa3f4160b9446ff9c7008f1e0ca9819.setContent(html_2cb83cd54faf485399abdd2d05da4a8d);
+        
+
+        circle_marker_d98fa959e48c4a79810750ed813750f3.bindPopup(popup_1fa3f4160b9446ff9c7008f1e0ca9819)
+        ;
+
+        
+    
+    
+            var circle_marker_b4b62f38148746a08ff04ce5a81f154d = L.circleMarker(
+                [34.7999992, -108.0009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_485561dcb7a84303a9931fe42229fa37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9df964eeb594d5bb07463cded033fa0 = $(`<div id="html_b9df964eeb594d5bb07463cded033fa0" style="width: 100.0%; height: 100.0%;">Zuni-Bandera volcano    2550.0 meters</div>`)[0];
+            popup_485561dcb7a84303a9931fe42229fa37.setContent(html_b9df964eeb594d5bb07463cded033fa0);
+        
+
+        circle_marker_b4b62f38148746a08ff04ce5a81f154d.bindPopup(popup_485561dcb7a84303a9931fe42229fa37)
+        ;
+
+        
+    
+    
+            var circle_marker_04e023beef514ae8ba6e6e7c5699cec7 = L.circleMarker(
+                [33.7801018, -105.9309998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6aac9f9bcfe943d6b2fdbd8e89f7cf44);
+        
+    
+        var popup_e3c524022eb3433e8621a511990fa69c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b7eaadc6f4b4c43aa77b880dea469a8 = $(`<div id="html_9b7eaadc6f4b4c43aa77b880dea469a8" style="width: 100.0%; height: 100.0%;">Carrizozo volcano    1731.0 meters</div>`)[0];
+            popup_e3c524022eb3433e8621a511990fa69c.setContent(html_9b7eaadc6f4b4c43aa77b880dea469a8);
+        
+
+        circle_marker_04e023beef514ae8ba6e6e7c5699cec7.bindPopup(popup_e3c524022eb3433e8621a511990fa69c)
+        ;
+
+        
+    
+</script>
