@@ -24,7 +24,6 @@
 # Using the Marker class allows Python to convert code to java script code using Leaflet to display pop up markers on 
 # the map. Ref line 36
 # 
-
 # --------------------------------------------------------------------------------------------------------------------------
  
 import folium
@@ -48,6 +47,7 @@ lon = list(data["LON"])
 nm  = list(data["NAME"])
 elev = list(data["ELEV"])
 
+# HTML formatting is used to create a link to Google in order to search based on volcano name.
 html = """
 <a href="https://www.google.com/search?q=%%22%s%%22" target="_blank">%s</a><br>
 Height: %s m
@@ -75,7 +75,7 @@ map.add_child(folium.CircleMarker(
     fill_opacity=0.7))
 
 fg = folium.FeatureGroup(name="Volcanoes west coast")    # Use feature group object variable to add multiple features to map to better organize code and for controlling layer control features such as turning layers on and off
-for lt, ln, nm, el in zip(lat, lon, nm, elev):                   # Layer two: point layer for volcano data     
+for lt, ln, nm, el in zip(lat, lon, nm, elev):           # Layer two: point layer for volcano data     
     fg.add_child(folium.CircleMarker(
         location=[lt, ln],
         radius = 5,
