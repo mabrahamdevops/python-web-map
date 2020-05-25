@@ -20,9 +20,10 @@ There are three iterative possibilities being explored to deploy this applicatio
 
 ## Expected behavior
 
-This is a single page with a terrain map and displays popup windows using lattidute, longitude, name, and height data to populate know volcanoes in the western United States.
+This is a single page with a terrain map and displays popup windows using latidute, longitude, name, and height data to populate know volcanoes in the western United States.
 
-Starting point based on lat and lon
+Starting point based on latitude and longitude coordinates.
+
 ![](images/start.png)
 
 Popup displaying volcano information
