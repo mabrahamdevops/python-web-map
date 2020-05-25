@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------
-# Python web app built in Docker to demonstrate building and deploying from Jenkins using pipeline and terraform
-# See README.md and Terraform main.tf for additonal details on deploying Jenkins and Docker in Linux contair hosted
-# on an AWS EC2 cluster.
+# Python web application which will be built and deployed in Docker to demonstrate building and deploying from Jenkins using pipeline and terraform
+# See README.md and see repository mabrahamdevops/jenkins-docker-container/README.md for additonal details on deploying Jenkins and Docker in Linux contair hosted
+# on an AWS EC2 cluster as well as creating this application in a docker container and deploying via Terraform.
 #
 # (C) 2020 Mark Abraham, Brandon, FL
 # Email: markabraham3232@gmail.com
@@ -23,7 +23,6 @@
 #
 # Using the Marker class allows Python to convert code to java script code using Leaflet to display pop up markers on 
 # the map. Ref line 36
-# 
 # --------------------------------------------------------------------------------------------------------------------------
  
 import folium
